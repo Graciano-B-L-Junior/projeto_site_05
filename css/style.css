@@ -174,6 +174,19 @@ section.veiculos-destaque .line-titulo > h2{
 	padding: 0 20px;
 }
 
+.btn1{
+	text-decoration: none;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	width: 150px;
+	background-color: #eb2d2d;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	border-bottom: 5px solid #b21e1e;
+}
+
 .vitrine-destaque{
 	float: left;
 	width: 33.3%;
@@ -202,19 +215,93 @@ section.veiculos-destaque .line-titulo > h2{
 }
 
 .vitrine-destaque a{
-	text-decoration: none;
+	
 	margin-left: 8px;
 	margin-top: 6px;
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-	width: 150px;
-	background-color: #eb2d2d;
-	line-height: 40px;
-	display: block;
-	text-align: center;
-	border-bottom: 5px solid #b21e1e;
+	
 }
+
+.servicos-descricao{
+	display: flex;
+}
+
+.half1{
+	text-align: right;
+	width: 50%;
+	padding: 90px 0;
+	color: white;
+	background: #242424;
+}
+
+.half1-wraper{
+	text-align: left;
+	display: inline-block;
+	padding-right: 100px;
+}
+
+.half1-wraper h2{
+	font-size: 32px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.half1-wraper a{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 40px;
+}
+
+.half1-wraper ul{
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.half1-wraper ul li{
+	margin-left: 15px;
+}
+
+.half2{
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 90px 100px;
+	background: #eb2d2d;
+	color: white;
+}
+
+.half2 h2{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+}
+
+.half2 .depoimentos-single{
+	margin-top: 19px;
+}
+
+.depoimentos-single p{
+	font-size: 24px;
+}
+
+.navigation{
+	margin-top: 30px;
+}
+
+.navigation img{
+	margin: 0px 20px;
+}
+
+.arrows{
+	float: left;
+}
+
+.nome-depoimento{
+	float: right;
+	color: #252525;
+	font-size: 23px;
+}
+
+
 
 @media screen and (max-width: 580px){
 	.text-banner{
@@ -259,11 +346,36 @@ section.veiculos-destaque .line-titulo > h2{
 		min-height: 0;
 		max-height: 800px;
 	}
+
+	
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
 	.text-banner{
 		padding: 70px;
+	}
+
+	.servicos-descricao{
+		flex-direction: column;
+	}
+	.half1{
+		text-align: center;
+	}
+	.half1,.half2{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1100px){
+	.half1-wraper{
+		padding-left: 15%;
+	}
+
+	.half1-wraper a{
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
 	}
 }
 
